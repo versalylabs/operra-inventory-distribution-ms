@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <defs>
+    <linearGradient id="apple-bg" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#15191e"/>
+      <stop offset="100%" stop-color="#000710"/>
+    </linearGradient>
+    <linearGradient id="apple-ember" x1="90" y1="65" x2="145" y2="145" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff6b1a"/>
+      <stop offset="100%" stop-color="#e04e00"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#apple-bg)"/>
+  <rect x="2" y="2" width="176" height="176" rx="38" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+  
+  <!-- Isometric Supply Cargo & Distribution Facets -->
+  <!-- Top Storage Tier -->
+  <path d="M90 38L138 64.5L90 91L42 64.5Z" fill="#FFFFFF"/>
+  
+  <!-- Left Warehouse Pallet Tier -->
+  <path d="M42 72.5L85.5 96V145L42 120.5Z" fill="#B9BBC6"/>
+  <path d="M42 96.5L85.5 120" stroke="#000710" stroke-width="4" stroke-opacity="0.3"/>
+  
+  <!-- Right Active Logistics Dispatch (Ember) -->
+  <path d="M94.5 96L138 72.5V120.5L94.5 145Z" fill="url(#apple-ember)"/>
+  <path d="M94.5 120L138 96.5" stroke="#ffffff" stroke-width="4" stroke-opacity="0.4"/>
+  
+  <!-- Central Distribution Nexus -->
+  <circle cx="90" cy="93.5" r="11" fill="#000710"/>
+  <circle cx="90" cy="93.5" r="6.5" fill="#FF5900"/>
+</svg>

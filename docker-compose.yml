@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: operra-postgres
+    restart: unless-stopped
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: operra
+      POSTGRES_PASSWORD: operra_password
+      POSTGRES_DB: operra_db
+    volumes:
+      - operra_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U operra -d operra_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  operra_pgdata:
